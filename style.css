@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  color: #171a20;
+  color: #fff;
   font-family: handwritten, sans-serif, Arial, Helvetica;
 }
 
@@ -42,7 +42,7 @@ header {
 a.logo {
   height: 12px;
   width: 100px;
-  color: inherit;
+  color: #171a20;
 }
 
 header a {
@@ -52,6 +52,13 @@ header a {
 header nav a {
   text-decoration: none;
   padding: 5px 10px;
+  transition: color 0.4s ease-in-out;
+}
+
+header.scrolled nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #171a20;
 }
 
 header nav.center {
@@ -75,6 +82,22 @@ section {
   background-position: center center;
   scroll-snap-align: center;
   scroll-snap-stop: always;
+}
+
+header .logo {
+  display: inline-block;
+  background-image: url(images/tehslalogowhite.svg);
+  background-size: 150px 13px;
+  width: 150px;
+  height: 13px;
+}
+
+header.scrolled .logo {
+  background-image: url(images/tehslalogoblack.svg);
+}
+
+.gifSection {
+  background-image: url(images/background.gif);
 }
 
 .modelRSection {
@@ -118,7 +141,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .appear {
@@ -141,6 +163,24 @@ section {
 
 section h1 {
   font-size: 4rem;
+  color: #171a20;
+}
+
+p {
+  color: #171a20;
+}
+
+.gifh1 {
+  color: #fff;
+}
+
+.gifp {
+  color: #fff;
+}
+
+.addressTitle,
+article {
+  color: #171a20;
 }
 
 section a {
@@ -150,7 +190,7 @@ section a {
 section .buttons a {
   display: block;
   background-color: #eee;
-  color: inherit;
+  color: #171a20;
   padding: 12px 50px;
   border-radius: 5px;
   text-decoration: none;
@@ -170,12 +210,32 @@ section .buttons {
   margin: 0 40px;
 }
 
+section .singleButton a {
+  display: block;
+  background-color: transparent;
+  padding: 12px 100px;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  max-width: 85vw;
+  margin: auto;
+}
+
 @media (min-width: 768px) {
   section .buttons {
     max-width: 640px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+  }
+
+  section .singleButton {
+    max-width: 640px;
+    margin: 0 auto;
   }
 }
 
@@ -197,7 +257,7 @@ aside.active {
 
 aside a {
   display: block;
-  color: inherit;
+  color: #171a20;
   text-decoration: none;
   padding: 12px 0;
   font-size: 18px;
@@ -288,7 +348,7 @@ aside button.close {
 
 .tokenomics {
   background-color: aqua;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   transform: none;
 }
@@ -446,6 +506,11 @@ div.scroll-container img {
   padding: 30px;
   border: 3px dashed white;
   border-radius: 25px;
+}
+
+.copyright,
+.disclaimer {
+  color: #171a20;
 }
 
 @media (max-width: 1295px) {
