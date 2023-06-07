@@ -166,6 +166,11 @@ section h1 {
   color: #171a20;
 }
 
+.roadmaph1,
+.tokenomicsh1 {
+  color: #fff;
+}
+
 p {
   color: #171a20;
 }
@@ -344,6 +349,10 @@ aside button.close {
   padding: 100px;
   gap: 50px;
   transform: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 .tokenomics {
